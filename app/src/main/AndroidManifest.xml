@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventElegance"
+        tools:targetApi="31">
+        <activity
+            android:name=".DisplayDueAmount"
+            android:exported="false"
+            android:label="@string/title_activity_display_due_amount"
+            android:theme="@style/Theme.EventElegance" />
+        <activity
+            android:name=".ActualServiceCost"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceCostCalculation"
+            android:exported="false" />
+        <activity
+            android:name=".ImageAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".NewImageView"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayImages"
+            android:exported="false" />
+        <activity
+            android:name=".MainGrid"
+            android:exported="false" />
+        <activity
+            android:name=".GridView"
+            android:exported="false" />
+        <activity
+            android:name=".BirthdayPlan"
+            android:exported="false" />
+        <activity
+            android:name=".Other"
+            android:exported="false" />
+        <activity
+            android:name=".Birthday"
+            android:exported="false" />
+        <activity
+            android:name=".Wedding"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

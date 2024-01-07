@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ActualServiceCost">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/eventelegance"
+        android:textAlignment="center"
+        android:textColor="#6A201B"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/many_days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/many_days"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="33dp"
+        android:text="For How Many Days Do You Want To Hire The Service?"
+        android:textAlignment="center"
+        android:textColor="#5C140F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/days"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/deposit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/many_days" />
+
+    <TextView
+        android:id="@+id/deposit_text"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:text="Initial Deposit"
+        android:textAlignment="center"
+        android:textColor="#5C140F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/deposit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/days" />
+
+    <EditText
+        android:id="@+id/deposit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/rate_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deposit_text" />
+
+    <TextView
+        android:id="@+id/rate_text"
+        android:layout_width="286dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="24dp"
+        android:text="Rate(W for Wedding, B for Party, A for Anniversary, C for Concert):"
+        android:textAlignment="center"
+        android:textColor="#5C140F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deposit" />
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate_text" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="106dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:background="#CB834F"
+        android:text="CALCULATE"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
